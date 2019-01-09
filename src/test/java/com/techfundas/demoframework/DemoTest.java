@@ -13,10 +13,15 @@ public class DemoTest {
 	public void validateLaunch()
 	{
 		// TODO Auto-generated method stub
-		
+		//comments Incorparated
+		String Path= System.getProperty("user.dir");
 		String env ="winCromePath";
-		String winCromePath ="C:/Users/Kalyan/eclipse-workspace/demoframework/src/test/java/Resources/chromedriver.exe";
-	//	String winLinusPath ="C:/Users/Kalyan/eclipse-workspace/demoframework/src/test/java/Resources/chromedriver";
+   // String winCromePath ="C:/Program Files (x86)/Jenkins/workspace/AutomationDemo/src/test/java/Resources/chromedriver.exe";
+	   String winCromePath = Path + "/src/test/java/Resources/chromedriver.exe";
+	//	String winCromePath ="C:/Users/Kalyan/eclipse-workspace/demoframework/src/test/java/Resources/chromedriver.exe";
+		
+		
+	//	String winLinuxPath ="C:/Users/Kalyan/eclipse-workspace/demoframework/src/test/java/Resources/chromedriver";
 		
 		if(env.equals("winCromePath"))
 			{ System.setProperty("webdriver.chrome.driver",winCromePath); }
